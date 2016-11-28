@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upload_doc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.activity.devibar.hitch.UploadDocActivity"
+    android:background="#2c3e50">
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/upload"
+        android:id="@+id/imgPolice"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgNBI" />
+
+    <TextView
+        android:text="Police Clearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPolice"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtNbi"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/upload"
+        android:id="@+id/imgDrivers"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgPolice" />
+
+    <TextView
+        android:text="Drivers License"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDriversLicense"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtPolice" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/upload"
+        android:id="@+id/imgNBI"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgOrcr" />
+
+    <TextView
+        android:text="ORCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOrcr"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <TextView
+        android:text="NBI Clearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNbi"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtOrcr"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/upload"
+        android:id="@+id/imgOrcr"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp" />
+
+    <Button
+        android:text="SUBMIT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtDriversLicense"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:text="ORCR.pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtOrcrFile"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgOrcr"
+        app:layout_constraintBottom_toTopOf="@+id/imgNBI"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp" />
+
+    <TextView
+        android:text="NBIClearance.pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNbiFile"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgNBI"
+        app:layout_constraintBottom_toTopOf="@+id/imgPolice"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp" />
+
+    <TextView
+        android:text="PoliceClearance.pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPoliceFile"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgPolice"
+        app:layout_constraintBottom_toTopOf="@+id/imgDrivers"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp" />
+
+    <TextView
+        android:text="DriversLicense.pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDriversFile"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgDrivers"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="64dp" />
+
+</android.support.constraint.ConstraintLayout>
